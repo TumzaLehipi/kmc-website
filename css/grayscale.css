@@ -1,4 +1,5 @@
 
+/*Navbar*/
 
 #mainNav {
   min-height: 56px;
@@ -82,6 +83,12 @@
   }
 }
 
+#visuals{
+
+  font-family: 'Charmonman', cursive;
+
+}
+
 .masthead {
   width: 100wh;
   height: 90vh;
@@ -152,11 +159,6 @@
   -webkit-background-clip: text;
 }
 
-/*.masthead h2 {
-  max-width: 20rem;
-  font-size: 1rem;
-}*/
-
 @media (min-width: 768px) {
   .masthead h1 {
     font-size: 2rem;
@@ -176,7 +178,7 @@
     letter-spacing: 0.8rem;
   }
   .masthead h2 {
-    max-width: 30rem;
+    max-width: 550rem;
     font-size: 1.25rem;
     font-family: 'Varela Round';
     letter-spacing: 0.1rem;
@@ -213,14 +215,14 @@
   background-color: #467370 !important;
 }
 
-.about-section {
+/*.about-section {
   padding-top: 10rem;
-  /*background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));*/
+  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
   background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0) 100%, rgba(0, 0, 0) 100%);
-}
+}*/
 
-.about-section h2 {
-    font-family: 'Varela Round';
+/*.about-section h2 {
+  font-family: 'Varela Round';
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
@@ -228,16 +230,25 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+*/
 
+/*About section*/
 
-.about-section p {
-  margin-bottom: 5rem;
+@keyframes bounce {
+ 0%, 20%, 60%, 100% {
+   -webkit-transform: translateY(0);
+   transform: translateY(0);
+ }
+ 40% {
+   -webkit-transform: translateY(-20px);
+   transform: translateY(-20px);
+ }
+ 80% {
+   -webkit-transform: translateY(-10px);
+   transform: translateY(-10px);
+ }
 }
-
-.projects-section {
-  padding: 10rem 0;
-}
-
+  
 .about-sect p {
   margin-bottom: 5rem;
 }
@@ -246,8 +257,16 @@
   padding: 10rem 0;
 }
 
-.projects-section .featured-text {
-  padding: 2rem;
+#aboutImage{
+
+  height: 28rem;
+  width: 28rem;
+  margin-left: 7rem;
+ 
+}
+
+.about-sect img-fluid{
+  animation: bounce 1s;
 }
 
 @media (min-width: 992px) {
@@ -255,6 +274,16 @@
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
   }
+}
+
+/*Projects section*/
+
+.projects-section {
+  padding: 10rem 0;
+}
+
+.projects-section .featured-text {
+  padding: 2rem;
 }
 
 .gallery-item {
@@ -361,7 +390,7 @@
   color: #fff;
 }
 
-body {
+/*body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
 }
@@ -374,7 +403,7 @@ a:focus, a:hover {
   text-decoration: none;
   color: #3c6360;
 }
-
+*/
 .bg-black {
   background-color: #161616 !important;
 }
@@ -390,13 +419,6 @@ a:focus, a:hover {
 footer {
   padding: 5rem 0;
 }
-
-
-/*!
- * Start Bootstrap - Stylish Portfolio v5.0.1 (https://startbootstrap.com/template-overviews/stylish-portfolio)
- * Copyright 2013-2018 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
- */
 
 body,
 html {
