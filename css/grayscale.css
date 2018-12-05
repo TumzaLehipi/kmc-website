@@ -1,8 +1,4 @@
-/*!
- * Start Bootstrap - Grayscale v5.0.2 (https://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2018 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
- */
+
 
 #mainNav {
   min-height: 56px;
@@ -87,37 +83,83 @@
 }
 
 .masthead {
-  position: relative;
+  width: 100wh;
+  height: 90vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #20c997, #23676b,#6c757d,#343a40);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  /*position: relative;
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-masthead.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/1.jpg");
-  background-position: center;
+  padding: 15rem 0;*/
+ /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/1.jpg");*/
+  /*background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+*/
 }
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
 
 .masthead h1 {
   font-family: 'Varela Round';
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.8rem;
+  font-size: 3rem;
+  line-height: 2rem;
+  letter-spacing: 0.5rem;
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
-.masthead h2 {
+/*.masthead h2 {
   max-width: 20rem;
   font-size: 1rem;
-}
+}*/
 
 @media (min-width: 768px) {
   .masthead h1 {
-    font-size: 4rem;
+    font-size: 2rem;
     line-height: 4rem;
   }
 }
@@ -129,13 +171,15 @@
   }
   .masthead h1 {
     font-family: 'Varela Round';
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
   }
   .masthead h2 {
     max-width: 30rem;
     font-size: 1.25rem;
+    font-family: 'Varela Round';
+    letter-spacing: 0.1rem;
   }
 }
 
@@ -148,7 +192,7 @@
   text-transform: uppercase;
   letter-spacing: .15rem;
   border: 0;
-  margin-top: 450px;
+  margin-top: 80px;
   padding: 10px 10px 10px;
 }
 
